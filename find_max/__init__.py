@@ -14,24 +14,22 @@ def compiles():
     check50.c.compile("max.c", lcs50=True)
 
 
-
-
 @check50.check(compiles)
 def simple():
-    """Returns 3 from 0, 1, 3"""
-    check_max(numbers=[0, 1, 3])
+    """returns maximum from 3, 7, 19"""
+    check_max(numbers=[3, 7, 19])
 
 
 @check50.check(compiles)
-def negative():
-    """Returns 4 from -10, 4, 2"""
-    check_max(numbers=[-10, 4, 2])
+def negetive():
+    """returns maximum from -9, -101, -53, -74"""
+    check_max(numbers=[-9, -101, -53, -74])
 
 
 @check50.check(compiles)
-def negative_max():
-    """Returns -10 from -10, -50, -100"""
-    check_max(numbers=[-10, -50, -100])
+def mixed():
+    """returns maximum from 993, -139, 22, -45"""
+    check_max(numbers=[993, -139, 22, -45])
 
 
 def check_max(numbers: list):
