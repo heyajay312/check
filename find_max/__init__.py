@@ -17,24 +17,24 @@ def compiles():
 @check50.check(exists)
 def simple():
     """returns 19 from 3, 7, 19"""
-    check_max(numbers=[3, 7, 19])
+    check_max(elements=[3, 7, 19])
 
 
 @check50.check(exists)
 def negetive():
     """returns -9 from -9, -101, -53, -74"""
-    check_max(numbers=[-9, -101, -53, -74])
+    check_max(elements=[-9, -101, -53, -74])
 
 
 @check50.check(exists)
 def mixed():
     """returns 993 from 993, -139, 22, -45"""
-    check_max(numbers=[993, -139, 22, -45])
+    check_max(elements=[993, -139, 22, -45])
 
 
-def check_max(numbers: list):
+def check_max(elements: list):
     program = check50.run("./max")
-    program.stdin(str(len(numbers)))
-    for i in numbers:
-        print(program.stdin(str(i)))
-    program.stdout(str(max(numbers)))
+    program.stdin(str(len(elements)))
+    for number in elements:
+        print(program.stdin(str(number)))
+    program.stdout(str(max(elements)))
