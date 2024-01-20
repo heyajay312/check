@@ -16,19 +16,19 @@ def compiles():
 
 @check50.check(exists)
 def simple():
-    """returns maximum from 3, 7, 19"""
+    """returns 19 from 3, 7, 19"""
     check_max(numbers=[3, 7, 19])
 
 
 @check50.check(exists)
 def negetive():
-    """returns maximum from -9, -101, -53, -74"""
+    """returns -9 from -9, -101, -53, -74"""
     check_max(numbers=[-9, -101, -53, -74])
 
 
 @check50.check(exists)
 def mixed():
-    """returns maximum from 993, -139, 22, -45"""
+    """returns 993 from 993, -139, 22, -45"""
     check_max(numbers=[993, -139, 22, -45])
 
 
