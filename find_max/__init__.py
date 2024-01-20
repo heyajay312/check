@@ -2,29 +2,29 @@ import check50
 import check50.c
 
 @check50.check()
-def exists:
+def exists():
     """max.c exists"""
     check50.exist ("max.c")
 
 @check50.check(exists)
-def compiles:
+def compiles():
     """max.c compiles"""
     check50.c.compile("max.c")
 
 @check50.check(exists)
-def simple:
+def simple():
     """returns maximum from 3, 19, 7"""
     check_max(numbers=[3, 19, 7])
 
 
 @check50.check(exists)
-def negetive:
+def negetive():
     """returns maximum from -9, -101, -53, -74"""
     check_max(number=[-9, -101, -53, -74])
 
 
 @check50.check(exits)
-def mixed:
+def mixed():
     """returns maximum from -993, 139, 22, -45"""
     check_max(number=[-993, 139, 22, -45])
 
