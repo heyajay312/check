@@ -4,7 +4,7 @@ import check50.c
 @check50.check()
 def exists():
     """max.c exists"""
-    check50.exist ("max.c")
+    check50.exists("max.c")
 
 @check50.check(exists)
 def compiles():
