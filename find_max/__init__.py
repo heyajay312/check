@@ -16,8 +16,8 @@ def compiles():
 
 @check50.check(exists)
 def simple():
-    """returns maximum from 3, 19, 7"""
-    check_max(numbers=[3, 19, 7])
+    """returns maximum from 3, 7, 19"""
+    check_max(numbers=[3, 7, 19])
 
 
 @check50.check(exists)
@@ -28,8 +28,8 @@ def negetive():
 
 @check50.check(exists)
 def mixed():
-    """returns maximum from -993, 139, 22, -45"""
-    check_max(numbers=[-993, 139, 22, -45])
+    """returns maximum from 993, -139, 22, -45"""
+    check_max(numbers=[993, -139, 22, -45])
 
 
 def check_max(numbers: list):
@@ -38,5 +38,4 @@ def check_max(numbers: list):
     for i in numbers:
         program.stdin(str(i))
     program.stdout(str(max(numbers)))
-    return program
     
