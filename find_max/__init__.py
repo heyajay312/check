@@ -15,22 +15,23 @@ def compiles():
 
 
 
-@check50.check(exists)
+
+@check50.check(compiles)
 def simple():
-    """returns 19 from 3, 7, 19"""
-    check_max(numbers=[3, 7, 19])
+    """Returns 3 from 0, 1, 3"""
+    check_max(elements=[0, 1, 3])
 
 
-@check50.check(exists)
-def negetive():
-    """returns -9 from -9, -101, -53, -74"""
-    check_max(numbers=[-9, -101, -53, -74])
+@check50.check(compiles)
+def negative():
+    """Returns 4 from -10, 4, 2"""
+    check_max(elements=[-10, 4, 2])
 
 
-@check50.check(exists)
-def mixed():
-    """returns 993 from 993, -139, 22, -45"""
-    check_max(numbers=[993, -139, 22, -45])
+@check50.check(compiles)
+def negative_max():
+    """Returns -10 from -10, -50, -100"""
+    check_max(elements=[-10, -50, -100])
 
 
 def check_max(numbers: list):
