@@ -39,4 +39,5 @@ def check_max(numbers: list):
     for i in numbers:
         program.stdin(str(i))
     program.stdout(str(max(numbers)))
+    return program
     
