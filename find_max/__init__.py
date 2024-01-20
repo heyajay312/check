@@ -1,15 +1,18 @@
 import check50
 import check50.c
 
+
 @check50.check()
 def exists():
     """max.c exists"""
     check50.exists("max.c")
 
+
 @check50.check(exists)
 def compiles():
     """max.c compiles"""
-    check50.c.compile("max.c")
+    check50.c.compile("max.c", lcs50=true)
+
 
 @check50.check(exists)
 def simple():
