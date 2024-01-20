@@ -32,7 +32,6 @@ def mixed():
     check_max(numbers=[-993, 139, 22, -45])
 
 
-
 def check_max(numbers: list):
     program = check50.run("./max")
     program.stdin(str(len(numbers)))
