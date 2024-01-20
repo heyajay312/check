@@ -33,6 +33,6 @@ def check_max(numbers: list):
     code = check50.run("./max")
     code.stdin(str(len(numbers)))
     for i in numbers:
-        code.stdin(str(numbers[i]))
+        code.stdin(str(numbers))
     program.stdout(str(max(numbers)))
     
