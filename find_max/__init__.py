@@ -11,7 +11,7 @@ def exists():
 @check50.check(exists)
 def compiles():
     """max.c compiles"""
-    check50.c.compile("max.c", lcs50=true)
+    check50.c.compile("max.c", lcs50=True)
 
 
 @check50.check(exists)
