@@ -37,6 +37,6 @@ def check_max(numbers: list):
     program = check50.run("./max")
     program.stdin(str(len(numbers)))
     for i in numbers:
-        program.stdin(str(numbers))
+        program.stdin(str(i))
     program.stdout(str(max(numbers)))
     
