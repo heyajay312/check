@@ -23,7 +23,7 @@ def negetive():
     check_max(number=[-9, -101, -53, -74])
 
 
-@check50.check(exits)
+@check50.check(exists)
 def mixed():
     """returns maximum from -993, 139, 22, -45"""
     check_max(number=[-993, 139, 22, -45])
