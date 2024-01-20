@@ -19,19 +19,19 @@ def compiles():
 @check50.check(compiles)
 def simple():
     """Returns 3 from 0, 1, 3"""
-    check_max(elements=[0, 1, 3])
+    check_max(numbers=[0, 1, 3])
 
 
 @check50.check(compiles)
 def negative():
     """Returns 4 from -10, 4, 2"""
-    check_max(elements=[-10, 4, 2])
+    check_max(numbers=[-10, 4, 2])
 
 
 @check50.check(compiles)
 def negative_max():
     """Returns -10 from -10, -50, -100"""
-    check_max(elements=[-10, -50, -100])
+    check_max(numbers=[-10, -50, -100])
 
 
 def check_max(numbers: list):
